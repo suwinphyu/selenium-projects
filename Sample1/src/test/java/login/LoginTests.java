@@ -15,9 +15,9 @@ public class LoginTests extends BaseTests {
     @Test
     public void testSuccessfulLogin(){
         LoginPage loginPage = homePage.clickSignIn();
-        loginPage.setCompanyNameField("suwinco");
-        loginPage.setUserNameField("suwin");
-        loginPage.setPasswordField("123");
+        loginPage.setCompanyNameField("samplecompanyid");
+        loginPage.setUserNameField("sampleusername");
+        loginPage.setPasswordField("samplepassword");
         DashboardPage dashboardPage = loginPage.clickLoginButton();
         assertTrue(dashboardPage.getTitle().contains("Dashboard"),"My Payslip");
 
